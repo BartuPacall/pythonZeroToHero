@@ -1,6 +1,6 @@
 # Basic Calculator Python
 
-op = input("Choose an operand (+ - * /) :")
+op = input("Choose an operand (+ - * / %) :")
 
 
 while True:
@@ -30,5 +30,7 @@ elif op == "/":
         print("Error: Division by zero is not allowed.")
 elif op == "*":
     print(number1 * number2)
+elif op == "%":
+    print(number1 % number2)
 else:
-    print("Operation not recognized. Please choose a valid operand : +, -, *, /")
+    print("Operation not recognized. Please choose a valid operand : +, -, *, / , %")
