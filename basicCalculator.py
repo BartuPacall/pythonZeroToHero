@@ -1,4 +1,4 @@
-# Basic Calculator Python
+# Basic Calculator Python #
 
 op = input("Choose an operand (+ - * / %) :")
 
@@ -34,3 +34,43 @@ elif op == "%":
     print(number1 % number2)
 else:
     print("Operation not recognized. Please choose a valid operand : +, -, *, / , %")
+
+
+
+# Basic Calculator Python part 2 #
+def calculation(num1,num2):
+    op=input("Choose an operator (+ / * - % ) : ")
+    if op =="+":
+        result=num1+num2
+    elif op=="/":
+        result=num1/num2
+    elif op=="*":
+        result=num1*num2
+    elif op=="-":
+        result=num1-num2
+    elif op=="%":
+        result=num1%num2
+    else:
+        print("Operation not recognized. Please choose a valid operand")
+    print(result)
+
+
+while True:
+    try:
+        x=input("Enter a first number :")
+        number1 =int(x)
+        break
+    except ValueError:
+        print("Enter a valid type")
+
+while True:
+    try:
+        y=input("Enter a second number :")
+        number2 = int(y)
+        break
+    except ValueError:
+        print("Enter a valid type")
+
+
+
+calculation(number1,number2)
