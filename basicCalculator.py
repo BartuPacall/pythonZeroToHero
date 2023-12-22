@@ -1,4 +1,4 @@
-# Basic Calculator Python #
+# Basic Calculator1 Python  #
 
 op = input("Choose an operand (+ - * / %) :")
 
@@ -37,7 +37,7 @@ else:
 
 
 
-# Basic Calculator Python part 2 #
+# Basic Calculator2 Python  #
 def calculation(num1,num2):
     op=input("Choose an operator (+ / * - % ) : ")
     if op =="+":
